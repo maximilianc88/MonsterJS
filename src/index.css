@@ -16,5 +16,6 @@ code {
   color: black;
   text-align: left;
   border: solid 1px gray;
+  margin: 20px;
   padding: 10px;
 }
