@@ -26,9 +26,9 @@
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+        <button class="icon">
           <i class="fa fa-bars"></i>
-        </a>
+        </button>
       </div>
     </div>
 
@@ -47,9 +47,9 @@
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+        <button class="icon">
           <i class="fa fa-bars"></i>
-        </a>
+        </button>
       </div>
     </div>
 
@@ -68,9 +68,9 @@
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+        <button class="icon">
           <i class="fa fa-bars"></i>
-        </a>
+        </button>
       </div>
     </div>
 
@@ -89,19 +89,24 @@
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+        <button class="icon">
           <i class="fa fa-bars"></i>
-        </a>
+        </button>
       </div>
     </div>
 
     <script>
+      document.querySelectorAll("button").forEach((btn) => {
+        btn.addEventListener("click", responsiveNav);
+      });
+
       function responsiveNav() {
-        let nav = document.getElementById("myNav");
-        if (nav.className === "navbar") {
+        let nav = this.parentNode.parentNode;
+
+        if (!nav.className.includes("responsive")) {
           nav.className += " responsive";
         } else {
-          nav.className = "navbar";
+          nav.className = nav.className.replace(" responsive", " ");
         }
       }
     </script>
