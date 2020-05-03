@@ -122,6 +122,10 @@ img {
   margin-left: 5px;
 }
 
+.fa {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {
     display: none;
@@ -145,5 +149,13 @@ img {
     float: none;
     display: block;
     text-align: left;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .fa {
+    display: block;
   }
 }

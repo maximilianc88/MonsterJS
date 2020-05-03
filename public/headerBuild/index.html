@@ -98,10 +98,11 @@
     <script>
       function responsiveNav() {
         let nav = document.getElementById("myNav");
-        if (nav.className === "navbar") {
+
+        if (!nav.className.includes("responsive")) {
           nav.className += " responsive";
         } else {
-          nav.className = "navbar";
+          nav.className.replace("responsive", "");
         }
       }
     </script>
