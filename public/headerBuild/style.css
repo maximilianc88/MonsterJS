@@ -6,6 +6,12 @@ body {
   overflow: hidden;
 }
 
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
 .midnight {
   background-color: #333;
 }
@@ -66,9 +72,7 @@ img {
 
 .navbar a {
   font-family: Georgia, "Times New Roman", Times, serif;
-  display: flex;
-  /* justify-content: flex-end;
-  align-items: flex-end; */
+
   font-size: 16px;
   text-align: left;
   padding: 16px;
