@@ -1,0 +1,72 @@
+.btn-default {
+    background-color: pink;
+    border: none;
+    width: 100px;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-default:hover {
+    background-color: red;
+}
+
+.btn-lagoon {
+    background-color:#598665;
+    border: none;
+    width: 100px;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-lagoon:hover {
+    background-color: #839ab7;
+}
+
+.btn-midnight {
+    background-color:#333;
+    border: none;
+    width: 100px;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+.btn-midnight:hover {
+    background-color: #77815c;
+}
+
+.btn-moon {
+    background-color:#f8f8ff;
+    border: none;
+    width: 100px;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: #282829;
+}
+
+.btn-moon:hover {
+    background-color: #cacad0;
+}
+
+.btn-sunset {
+    background-color:#a41313;
+    border: none;
+    width: 100px;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: #f8de7e;
+}
+
+.btn-sunset:hover {
+    background-color: #e56800;
+}
