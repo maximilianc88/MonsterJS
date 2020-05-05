@@ -11,7 +11,7 @@ function App() {
       <Footer />
       <Button
         value='Click!'
-        styleClass='btn-sunset' />
+        styleClass='btn btn-sunset monster' />
     </div>
   );
 }
