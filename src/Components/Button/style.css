@@ -1,0 +1,98 @@
+.btn {
+    border: none;
+    width: auto;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: serif;
+    display: inline-block;
+}
+
+.btn-default {
+    border: none;
+    background-color: black;
+    font-family: serif;
+    color: white;
+    width: auto;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn-default:hover {
+    background-color: red;
+}
+
+.btn-lagoon {
+    background-color:#598665;
+    border: none;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-lagoon:hover {
+    background-color: #839ab7;
+}
+
+.btn-midnight {
+    background-color:#333;
+    border: none;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+.btn-midnight:hover {
+    background-color: #77815c;
+}
+
+.btn-moon {
+    background-color:#f8f8ff;
+    border: none;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: #282829;
+}
+
+.btn-moon:hover {
+    background-color: #cacad0;
+}
+
+.btn-sunset {
+    background-color:#a41313;
+    border: none;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: #f8de7e;
+}
+
+.btn-sunset:hover {
+    background-color: #e56800;
+}
+
+.sm {
+    font-size: 85%;
+}
+
+.md {
+    font-size: 105%;
+}
+
+.lg {
+    font-size: 125%;
+}
+
+.monster {
+    font-size: 150%;
+}
