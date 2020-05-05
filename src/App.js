@@ -1,7 +1,8 @@
 import React from 'react';
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
-import Button from "./Components/Button";
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import ButtonList from './Components/Buttons';
+import Button from './Components/Button';
 import "./App.css";
 
 function App() {
@@ -9,9 +10,10 @@ function App() {
     <div>
       <Header />
       <Footer />
+      <ButtonList />
       <Button
         value='Click!'
-        styleClass='btn btn-sunset monster' />
+        styleClass='btn-default' />
     </div>
   );
 }

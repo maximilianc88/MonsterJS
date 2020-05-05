@@ -1,19 +1,31 @@
-import React from "react";
-import ButtonOne from "./ButtonOne/button";
-import ButtonSunset from "./ButtonSunset/index";
+import React from 'react';
+import Button from './Button';
 
 
-const Button = (props) => {
+const ButtonList = (props) => {
   return (
     <div>
       <div className="comp-cat buttons">
-        <h1> Buttons: <ButtonOne /> <ButtonSunset /> </h1>
+        <h1> Buttons:  
+         <Button
+        value='Click!'
+        styleClass='btn btn-sunset monster' /> 
+         <Button
+        value='Click!'
+        styleClass='btn btn-lagoon lg' /> 
+         <Button
+        value='Click!'
+        styleClass='btn btn-moon md' />
+         <Button
+        value='Click!'
+        styleClass='btn btn-midnight sm' />
+        </h1>
       </div>
     </div>
   );
 };
 
-export default Button;
+export default ButtonList;
 
 // types = ['primary', 'outline', 'destructive', 'lowEmphasis'];
 // <>
