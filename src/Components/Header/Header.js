@@ -25,8 +25,6 @@ class Header extends Component {
     this.setState({
       showNavLinks: !this.state.showNavLinks,
     });
-
-    console.log(this.state.showNavLinks);
   };
 
   handleNavLinks = () => {
@@ -78,57 +76,21 @@ class Header extends Component {
             <div className="logo">
               <img src="logo192.png" alt="react logo" width="42" height="42" />
             </div>
-            <div className="nav-links">
-              {this.state.showNavIcons && (
-                <React.Fragment>
-                  <a href="#home">Home</a>
-                  <a href="#news">News</a>
-                  <a href="#contact">Contact</a>
-                  <a href="#about">About</a>
-                </React.Fragment>
-              )}
-              <button onClick={this.toggleNav} className="icon">
-                <i className="fa fa-bars"></i>
-              </button>
-            </div>
+            <div className="nav-links">{this.handleNavLinks()}</div>
           </div>
 
           <div className="navbar sunset" id="myNav">
             <div className="logo">
               <img src="logo192.png" alt="react logo" width="42" height="42" />
             </div>
-            <div className="nav-links">
-              {this.state.showNavIcons && (
-                <React.Fragment>
-                  <a href="#home">Home</a>
-                  <a href="#news">News</a>
-                  <a href="#contact">Contact</a>
-                  <a href="#about">About</a>
-                </React.Fragment>
-              )}
-              <button onClick={this.toggleNav} className="icon">
-                <i className="fa fa-bars"></i>
-              </button>
-            </div>
+            <div className="nav-links">{this.handleNavLinks()}</div>
           </div>
 
           <div className="navbar moon" id="myNav">
             <div className="logo">
               <img src="logo192.png" alt="react logo" width="42" height="42" />
             </div>
-            <div className="nav-links">
-              {this.state.showNavIcons && (
-                <React.Fragment>
-                  <a href="#home">Home</a>
-                  <a href="#news">News</a>
-                  <a href="#contact">Contact</a>
-                  <a href="#about">About</a>
-                </React.Fragment>
-              )}
-              <button onClick={this.toggleNav} className="icon">
-                <i className="fa fa-bars"></i>
-              </button>
-            </div>
+            <div className="nav-links">{this.handleNavLinks()}</div>
           </div>
         </div>
       </div>
