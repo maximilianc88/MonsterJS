@@ -13,7 +13,6 @@ function App() {
     <div>
       <Header />
       <Footer />
-      <ButtonList />
       <Button
         value='Click!'
         styleClass='btn-default' />
