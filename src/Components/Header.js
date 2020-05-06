@@ -12,6 +12,9 @@ class Header extends Component {
 
   componentDidMount() {
     window.addEventListener("resize", () => {
+      if (this.state.innerWidth >= 600 && window.innerWidth < 600) {
+        this.setState({ showNavLinks: false });
+      }
       this.setState({
         innerWidth: window.innerWidth,
       });
@@ -20,8 +23,42 @@ class Header extends Component {
 
   toggleNav = () => {
     this.setState({
-      showNavLinks: this.state.showNavLinks,
+      showNavLinks: !this.state.showNavLinks,
     });
+
+    console.log(this.state.showNavLinks);
+  };
+
+  handleNavLinks = () => {
+    if (this.state.innerWidth >= 600) {
+      return (
+        <React.Fragment>
+          <a href="#home">Home</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </React.Fragment>
+      );
+    } else if (this.state.innerWidth < 600 && this.state.showNavLinks) {
+      return (
+        <React.Fragment>
+          <button onClick={this.toggleNav} className="midnight icon">
+            <i className="fa fa-bars"></i>
+          </button>
+
+          <a href="#home">Home</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </React.Fragment>
+      );
+    } else {
+      return (
+        <button onClick={this.toggleNav} className="midnight icon">
+          <i className="fa fa-bars"></i>
+        </button>
+      );
+    }
   };
 
   render() {
@@ -34,20 +71,7 @@ class Header extends Component {
             <div className="logo">
               <img src="logo192.png" alt="react logo" width="42" height="42" />
             </div>
-            <div className="nav-links">
-              {(this.state.showNavLinks || this.state.innerWidth >= 600) && (
-                <React.Fragment>
-                  <a href="#home">Home</a>
-                  <a href="#news">News</a>
-                  <a href="#contact">Contact</a>
-                  <a href="#about">About</a>
-                </React.Fragment>
-              )}
-
-              <button onClick={this.toggleNav} className="midnight icon">
-                <i className="fa fa-bars"></i>
-              </button>
-            </div>
+            <div className="nav-links">{this.handleNavLinks()}</div>
           </div>
 
           <div className="navbar lagoon" id="myNav">
