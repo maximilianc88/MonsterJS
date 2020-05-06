@@ -141,9 +141,9 @@ img {
   margin-left: 5px;
 }
 
-.icon {
+/* .icon {
   display: none;
-}
+} */
 
 @media screen and (max-width: 600px) {
   .icon {
