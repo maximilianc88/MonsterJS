@@ -27,7 +27,7 @@
 }
 
 .btn-lagoon {
-    background-color:#598665;
+    background-color:#839ab7;
     border: none;
     padding: 10px 30px;
     text-align: center;
@@ -36,7 +36,7 @@
 }
 
 .btn-lagoon:hover {
-    background-color: #839ab7;
+    background-color: #598665;
 }
 
 .btn-midnight {
