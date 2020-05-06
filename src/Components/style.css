@@ -38,7 +38,7 @@ img {
 
 .midnight a:hover,
 .midnight button:hover {
-  background-color: #77815c;
+  background-color: #606061;
   border: none;
 }
 
@@ -146,43 +146,14 @@ img {
 }
 
 @media screen and (max-width: 600px) {
-  .navbar button {
-    float: right;
+  .icon {
     display: block;
+    padding: 10px;
+    background-color: inherit;
+    color: inherit;
   }
-}
-
-@media screen and (max-width: 600px) {
-  .navbar.responsive {
-    position: relative;
-  }
-
-  button .icon {
-    right: 0;
-    display: block;
-    background-color: tomato;
-    top: 0;
-  }
-  /* .navbar.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  } */
-  /* .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  } */
 
   .nav-links {
     flex-direction: column;
-  }
-
-  .nav-links a:not(:last-child) {
-    margin-right: 40px;
-  }
-
-  .active {
-    display: none;
   }
 }

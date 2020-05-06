@@ -5,26 +5,24 @@ class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showNavIcons: false,
+      innerWidth: window.innerWidth,
+      showNavLinks: false,
     };
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", () => {
+      this.setState({
+        innerWidth: window.innerWidth,
+      });
+    });
   }
 
   toggleNav = () => {
     this.setState({
-      showNavIcons: !this.state.showNavIcons,
+      showNavLinks: this.state.showNavLinks,
     });
-    console.log(this.state.showNavIcons);
   };
-
-  // responsiveNav = () => {
-  //   let nav = "navbar";
-
-  //   if (!nav.className.includes("responsive")) {
-  //     nav.className += " responsive";
-  //   } else {
-  //     nav.className = nav.className.replace(" responsive", " ");
-  //   }
-  // };
 
   render() {
     return (
@@ -37,7 +35,7 @@ class Header extends Component {
               <img src="logo192.png" alt="react logo" width="42" height="42" />
             </div>
             <div className="nav-links">
-              {this.state.showNavIcons && (
+              {(this.state.showNavLinks || this.state.innerWidth >= 600) && (
                 <React.Fragment>
                   <a href="#home">Home</a>
                   <a href="#news">News</a>
@@ -46,7 +44,7 @@ class Header extends Component {
                 </React.Fragment>
               )}
 
-              <button onClick={this.toggleNav} className="icon">
+              <button onClick={this.toggleNav} className="midnight icon">
                 <i className="fa fa-bars"></i>
               </button>
             </div>
@@ -57,13 +55,15 @@ class Header extends Component {
               <img src="logo192.png" alt="react logo" width="42" height="42" />
             </div>
             <div className="nav-links">
-              <a href="#home" className="active">
-                Home
-              </a>
-              <a href="#news">News</a>
-              <a href="#contact">Contact</a>
-              <a href="#about">About</a>
-              <button className="icon">
+              {this.state.showNavIcons && (
+                <React.Fragment>
+                  <a href="#home">Home</a>
+                  <a href="#news">News</a>
+                  <a href="#contact">Contact</a>
+                  <a href="#about">About</a>
+                </React.Fragment>
+              )}
+              <button onClick={this.toggleNav} className="icon">
                 <i className="fa fa-bars"></i>
               </button>
             </div>
@@ -74,13 +74,15 @@ class Header extends Component {
               <img src="logo192.png" alt="react logo" width="42" height="42" />
             </div>
             <div className="nav-links">
-              <a href="#home" className="active">
-                Home
-              </a>
-              <a href="#news">News</a>
-              <a href="#contact">Contact</a>
-              <a href="#about">About</a>
-              <button className="icon">
+              {this.state.showNavIcons && (
+                <React.Fragment>
+                  <a href="#home">Home</a>
+                  <a href="#news">News</a>
+                  <a href="#contact">Contact</a>
+                  <a href="#about">About</a>
+                </React.Fragment>
+              )}
+              <button onClick={this.toggleNav} className="icon">
                 <i className="fa fa-bars"></i>
               </button>
             </div>
@@ -91,13 +93,15 @@ class Header extends Component {
               <img src="logo192.png" alt="react logo" width="42" height="42" />
             </div>
             <div className="nav-links">
-              <a href="#home" className="active">
-                Home
-              </a>
-              <a href="#news">News</a>
-              <a href="#contact">Contact</a>
-              <a href="#about">About</a>
-              <button className="icon">
+              {this.state.showNavIcons && (
+                <React.Fragment>
+                  <a href="#home">Home</a>
+                  <a href="#news">News</a>
+                  <a href="#contact">Contact</a>
+                  <a href="#about">About</a>
+                </React.Fragment>
+              )}
+              <button onClick={this.toggleNav} className="icon">
                 <i className="fa fa-bars"></i>
               </button>
             </div>
