@@ -4,6 +4,7 @@ import Footer from './Components/Footer';
 import ButtonList from './Components/Buttons';
 import Button from './Components/Button';
 import "./App.css";
+import TestForm from './Components/Form/index'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Button
         value='Click!'
         styleClass='btn-default' />
+        <TestForm />
     </div>
   );
 }
