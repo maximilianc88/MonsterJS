@@ -67,28 +67,28 @@ class Header extends Component {
 
           <div className="navbar midnight" id="myNav">
             <div className="logo">
-              <img src="logo192.png" alt="react logo" width="42" height="42" />
+              <img src="codeMonster(light).png" alt="logo" height="42" />
             </div>
             <div className="nav-links">{this.handleNavLinks()}</div>
           </div>
 
           <div className="navbar lagoon" id="myNav">
             <div className="logo">
-              <img src="logo192.png" alt="react logo" width="42" height="42" />
+              <img src="codeMonster.png" alt="logo" height="42" />
             </div>
             <div className="nav-links">{this.handleNavLinks()}</div>
           </div>
 
           <div className="navbar sunset" id="myNav">
             <div className="logo">
-              <img src="logo192.png" alt="react logo" width="42" height="42" />
+              <img src="codeMonster.png" alt="logo" height="42" />
             </div>
             <div className="nav-links">{this.handleNavLinks()}</div>
           </div>
 
           <div className="navbar moon" id="myNav">
             <div className="logo">
-              <img src="logo192.png" alt="react logo" width="42" height="42" />
+              <img src="codeMonster.png" alt="logo" height="42" />
             </div>
             <div className="nav-links">{this.handleNavLinks()}</div>
           </div>
