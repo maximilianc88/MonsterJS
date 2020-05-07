@@ -3,10 +3,8 @@ import React from "react";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer";
 import Button from "./Components/Buttons";
-
-
+import ContactForm from "./Components/ContactForm"
 import "./App.css";
-import TestForm from './Components/Form/index'
 
 function App() {
   return (
@@ -16,7 +14,7 @@ function App() {
       <Button
         value='Click!'
         styleClass='btn-default' />
-        <TestForm />
+        <ContactForm />
     </div>
   );
 }

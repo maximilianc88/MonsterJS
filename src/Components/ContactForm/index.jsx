@@ -10,25 +10,25 @@ function MyTextInput(props){
         }
     }
     return(
-        <p>
             <input type='email' value={props.value} name={props.name} ref={props.inputRef} onChange={handleChange} placeholder={props.placeholder} className={props.className} />
-        </p>
     )
 }
 
 // class CustomTextComponent extends React.Component {
 //     render 
 // }
-class FormsAndInputs extends React.Component {
+class ContactForm extends React.Component {
     constructor(props){
         super(props)
         this.state = {
             fullName: '',
             content: '',
-            email: ''
+            email: '',
+            phone: '',
         }
         this.inputFullNameRef = React.createRef()
         this.inputEmailRef = React.createRef()
+        this.inputPhoneRef = React.createRef()
     }
     handleSubmit = (event) => {
         event.preventDefault()
@@ -38,6 +38,7 @@ class FormsAndInputs extends React.Component {
         this.inputEmailRef.current.value = ''
         this.inputFullNameRef.current.value = ''
         this.inputContentRef.value=''
+        this.inputPhoneRef.current.value=''
     }
 
     handleInputChange = (event) => {
@@ -52,11 +53,13 @@ class FormsAndInputs extends React.Component {
         console.log("I am the clear function!")
         this.inputEmailRef.current.value = ''
         this.inputFullNameRef.current.value = ''
+        this.inputPhoneRef.current.value = ''
         this.inputContentRef.value=''
         this.setState({
             fullName: '',
             email: '',
-            content: ''
+            content: '',
+            phone: ''
         })
     })
 
@@ -68,22 +71,28 @@ class FormsAndInputs extends React.Component {
     render () {
         const {fullName} = this.state
         const {email} = this.state
+        const {phone} = this.state
         return (
             <div>
                     <div className='form-header'>
-                        <h1>Contact Forms</h1>
+                        <h1>Contact Form</h1>
                     </div>
-                <p>Full name is: {fullName}</p>
                 <form id='contact-form' onSubmit={this.handleSubmit}>
-                    <input  ref={this.inputFullNameRef} type='text' placeholder='Your Name' value={fullName} name='fullName' onChange = {this.handleInputChange} />
-                    <MyTextInput  value={email} name='email' inputRef = {this.inputEmailRef} onChange={this.handleInputChange} placeholder='Email' />
-                    <textarea  ref={node => this.inputContentRef = node} placeholder='Type a message here' rows='5' name='content' required={true} onChange = {this.handleInputChange} />
-                    <Button  styleClass='btn btn-sunset monster'  value='Send Message'>Submit</Button>
-                    <Button styleClass='btn btn-sunset monster'  value='Clear' type='text' onClick={this.handleClearClick}>Clear</Button>  
+                <div className='form-elements midnight' id="form-el-wrapper">
+                <label className='midnight-label'>Midnight Contact Form</label>
+                    <input  className="text-action" ref={this.inputFullNameRef} type='text' placeholder='Your Name' value={fullName} name='fullName' onChange = {this.handleInputChange} />
+                    <input  className="text-action" ref={this.inputPhoneRef} type='tel' placeholder='Your Phone Number (optional)' value={phone} name='phone' onChange = {this.handleInputChange} />
+                    <MyTextInput  className='email-input text-action' value={email} name='email' inputRef = {this.inputEmailRef} onChange={this.handleInputChange} placeholder='Email' />
+                    <textarea  className="text-action" ref={node => this.inputContentRef = node} placeholder='Type a message here' rows='5' name='content' required={true} onChange = {this.handleInputChange} />
+                    <div id='btnWrapper'>
+                    <Button  styleClass='btn btn-sunset lg'  value='Send Message'>Submit</Button>
+                    <Button  styleClass='btn btn-sunset lg'  value='Clear' type='text' onClick={this.handleClearClick}>Clear</Button>  
+                    </div>
+               </div>
                 </form>
             </div>
         )
     }
 }
 
-export default FormsAndInputs
+export default ContactForm
