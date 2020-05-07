@@ -7,13 +7,11 @@
     font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.submit-action {
+#btnWrapper {
     box-sizing: border-box;
     height: 50px;
-    width: 75px;
     display:flex;
-    justify-content: center;
-    align-self: center;
+    justify-content: space-between;
     font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -36,7 +34,7 @@
 
 .midnight-label {
     font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 20px;
+    font-size: 50px;
     color: white;
     height: 30px;
     display: flex;
