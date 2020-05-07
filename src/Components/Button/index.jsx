@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './style.css';
 
-const Button = ({styleClass, value}) => (
+const Button = ({styleClass, value, onClick}) => (
     <button
-        className = {styleClass} >
+        className = {styleClass} onClick={onClick}>
         {value} 
         </button>
 );
