@@ -23,7 +23,6 @@ function App() {
       <CardList />
       <Social />
       <Button value="Click!" styleClass="btn-default" />
-      <ContactForm />
       <SearchBar value="Search!" />
       <Figure value="Your Text Here!" />
     </div>
