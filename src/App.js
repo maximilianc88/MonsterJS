@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./Components/Header/Header";
+import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Button from "./Components/Buttons";
 import ContactForm from "./Components/ContactForm";
