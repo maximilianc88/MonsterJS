@@ -5,6 +5,7 @@ import Button from "./Components/Buttons";
 import ContactForm from "./Components/ContactForm";
 import Social from "./Components/Social";
 import SearchBar from "./Components/SearchBar";
+import Figure from "./Components/Figure";
 import "./App.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Button value="Click!" styleClass="btn-default" />
       <ContactForm />
       <SearchBar value="Search!" />
+      <Figure value="Your Text Here!" />
     </div>
   );
 }
