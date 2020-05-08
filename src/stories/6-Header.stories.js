@@ -10,12 +10,7 @@ export default {
 };
 
 export const Sunset = () => 
-<Card
-theme='sunset'
-cardImage='./gagaSunset.png'
-imageHeight='200px'
-title='Sunset!'
-value='Write a caption!'/>;
+<Header />
 
 export const Lagoon = () => 
 <Card
