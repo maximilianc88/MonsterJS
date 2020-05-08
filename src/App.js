@@ -3,7 +3,8 @@ import React from "react";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer";
 import Button from "./Components/Buttons";
-import ContactForm from "./Components/ContactForm"
+import ContactForm from "./Components/ContactForm";
+import CardList from "./Components/CardList";
 import "./App.css";
 
 function App() {
@@ -11,10 +12,12 @@ function App() {
     <div>
       <Header />
       <Footer />
-      <Button
-        value='Click!'
-        styleClass='btn-default' />
+      <Button />
         <ContactForm />
+        <CardList/>
+     
+       
+    
     </div>
   );
 }
