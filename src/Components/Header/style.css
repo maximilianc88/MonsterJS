@@ -1,8 +1,11 @@
+/* ---------------------- MAIN CSS ----------------------*/
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar {
+.navbar,
+.footer {
   overflow: hidden;
 }
 .logo {
@@ -19,8 +22,12 @@ img {
   border: solid black 1px;
 }
 
+/* -------------------- THEME CLASS STYLING ------------------------*/
+
 .navbar a,
-.navbar button {
+.footer a,
+.navbar button,
+.footer button {
   font-family: serif;
   font-size: 16px;
   text-align: left;
@@ -36,7 +43,7 @@ img {
 
 .midnight,
 .midnight button,
-.btn-midnight {
+.btn.midnight {
   font-family: serif;
   border: none;
   background-color: #333;
@@ -48,7 +55,7 @@ img {
 
 .midnight a:hover,
 .midnight button:hover,
-.btn-midnight:hover {
+.midnight.btn:hover {
   background-color: #606061;
   border: none;
 }
@@ -60,7 +67,7 @@ img {
 
 .lagoon,
 .lagoon button,
-.btn-lagoon {
+.btn.lagoon {
   padding: 10px 30px;
   border: none;
   background-color: #5986b5;
@@ -71,7 +78,7 @@ img {
 
 .lagoon a:hover,
 .lagoon button:hover,
-.btn-lagoon:hover {
+.lagoon.btn:hover {
   background-color: #839ab7;
   border: none;
 }
@@ -84,7 +91,7 @@ img {
 
 .sunset,
 .sunset button,
-.btn-sunset {
+.btn.sunset {
   font-family: serif;
   background-color: #a41313;
   border: none;
@@ -96,7 +103,7 @@ img {
 
 .sunset a:hover,
 .sunset button:hover,
-.btn-sunset:hover {
+.sunset.btn:hover {
   background-color: #e56800;
   border: none;
 }
@@ -109,7 +116,7 @@ img {
 
 .moon,
 .moon button,
-.btn-moon {
+.btn.moon {
   font-family: serif;
   background-color: #f8f8ff;
   border: none;
@@ -121,7 +128,7 @@ img {
 
 .moon a:hover,
 .moon button:hover,
-.btn-moon:hover {
+.moon.btn:hover {
   background-color: #cacad0;
   border: none;
 }
@@ -163,6 +170,26 @@ img {
 
 .btn-default:hover {
   background-color: red;
+}
+
+/* -------------------- SOCIAL ICONS ------------------------*/
+#social-icon i {
+  padding: 10px;
+}
+#social-icon i:hover {
+  opacity: 50%;
+}
+
+#social-icon a:hover {
+  background-color: transparent;
+}
+
+/* -------------------- FOOTER LOGO ------------------------*/
+
+.footer.foot-contents {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 
 /**************** Dropdown Component Styles *********************/
@@ -209,10 +236,6 @@ img {
   float: left;
   margin-left: 5px;
 }
-
-/* .icon {
-    display: none;
-  } */
 
 @media screen and (max-width: 600px) {
   .icon {
