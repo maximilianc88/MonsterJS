@@ -9,45 +9,13 @@ export default {
 };
 
 export const Sunset = () => 
-<div className="footer-three">
-          <div>
-            <div className={`footer sunset`} id="myNav">
-              <div className="foot-contents">
-                <img src="./codeMonster.png" alt="logo" height="60px" />
-              </div>
-            </div>
-          </div>
-        </div>
+<Footer theme='sunset' footerLogo='./codeMonster.png' logoHeight='60px'/>
 
 export const Lagoon = () => 
-<div className="footer-two">
-          <div>
-            <div className={`footer lagoon`} id="myNav">
-              <div className="foot-contents">
-                <img src="./codeMonster.png" alt="logo" height="60px" />
-              </div>
-            </div>
-          </div>
-        </div>
+<Footer theme='lagoon' footerLogo='./codeMonster.png' logoHeight='60px'/>
 
 export const Midnight = () => 
-<div className="footer-one">
-<div>
-  <div className={`footer midnight`} id="myNav">
-    <div className="foot-contents">
-      <img src="./codeMonster(light).png" alt="logo" height="60px" />
-    </div>
-  </div>
-</div>
-</div>
+<Footer theme='midnight' footerLogo='./codeMonster(light).png' logoHeight='60px'/>
 
 export const Moon = () => 
-<div className="footer-four">
-          <div>
-            <div className={`footer moon`} id="myNav">
-              <div className="foot-contents">
-                <img src="./codeMonster.png" alt="logo" height="60px" />
-              </div>
-            </div>
-          </div>
-        </div>
+<Footer theme='moon' footerLogo='./codeMonster.png' logoHeight='60px'/>

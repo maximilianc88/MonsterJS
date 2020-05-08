@@ -1,27 +1,29 @@
+
 import React from "react";
 import Proptypes from "prop-types";
 import "./style.css";
 
-const Card = ({ theme, cardImage, imageHeight, value, title }) => {
+const Card = ({ theme, cardImage, value, title }) => {
   return (
+    <wrapper>
     <div>
       <div className="row">
-        <div className="col-md-3">
+        <div className="col-md-4">
           <div className={`card ${theme}`}>
-            <img src={cardImage} alt="Gaga" height={imageHeight} />
+            <div><img className="img-fluid" src={cardImage} alt="Gaga"  /></div>
                 <div><span className="card">{title}</span></div>
-            <p className="card-p">{value}</p>
+            <div><p className="card-p">{value}</p></div>
           </div>
         </div>
       </div>
     </div>
+    </wrapper>
   );
 };
 
 Card.propTypes = {
   theme: Proptypes.string,
   cardImage: Proptypes.string,
-  imageHeight: Proptypes.string,
   value: Proptypes.string,
   title: Proptypes.string,
 };
