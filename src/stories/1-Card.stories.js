@@ -1,42 +1,76 @@
 import React from 'react';
-import { action } from '@storybook/addon-actions';
-import { Button } from '@storybook/react/demo';
-import Card from "../Components/Card";
+import Button from "../Components/Button";
 
 export default {
-  title: 'Card',
-  component: Card,
+  title: 'Buttons',
+  component: Button,
 };
 
-export const Sunset = () => 
-<Card
-theme='sunset'
-cardImage='./gagaSunset.png'
-imageHeight='200px'
-title='Sunset!'
-value='Write a caption!'/>;
+        export const Sunset = () => 
+        <span>
+                  <Button
+        value='Click!'
+        styleClass='btn btn-sunset monster' />
+                  <Button
+        value='Click!'
+        styleClass='btn btn-sunset lg' />
+                <Button
+        value='Click!'
+        styleClass='btn btn-sunset md' />
+                <Button
+        value='Click!'
+        styleClass='btn btn-sunset sm' />
+          
 
-export const Lagoon = () => 
-<Card
-        theme='lagoon'
-        cardImage='./gagaLagoon.png'
-        imageHeight='200px'
-        title='Lagoon!'
-        value='Write a caption!'/>
+        </span>
+
+        export const Lagoon = () => 
+        <span>
+          <Button
+          value='Click!'
+          styleClass='btn btn-lagoon monster' />
+                    <Button
+          value='Click!'
+          styleClass='btn btn-lagoon lg' />
+          <Button
+          value='Click!'
+          styleClass='btn btn-lagoon md' />
+          <Button
+          value='Click!'
+          styleClass='btn btn-lagoon sm' />
+          
+        </span>
+
+        export const Moon = () => 
+        <span>
+          <Button
+          value='Click!'
+          styleClass='btn btn-moon monster' />
+                    <Button
+          value='Click!'
+          styleClass='btn btn-moon lg' />
+          <Button
+          value='Click!'
+          styleClass='btn btn-moon md' />
+          <Button
+          value='Click!'
+          styleClass='btn btn-moon sm' />
+
+        </span>
 
 export const Midnight = () => 
-<Card
-        theme='midnight'
-        cardImage='./gagaMidnight.png'
-        imageHeight='200px'
-        title='Midnight!'
-        value='Write a caption!'/>
+<span>
+<Button
+  value='Click!'
+  styleClass='btn btn-midnight monster' />
+    <Button
+  value='Click!'
+  styleClass='btn btn-midnight lg' />
+  <Button
+  value='Click!'
+  styleClass='btn btn-midnight md' />
+  <Button
+  value='Click!'
+  styleClass='btn btn-midnight sm' />
 
-export const Moon = () => 
-<Card
-        theme='moon'
-        cardImage='./gagaMoon.png'
-        imageHeight='200px'
-        title='Moon!'
-        value='Write a caption!'/>
-
+</span>

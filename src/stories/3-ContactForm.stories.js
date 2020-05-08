@@ -10,13 +10,51 @@ export default {
 };
 
 export const Sunset = () => 
-<ContactForm />
+
+<form>
+<div class='form-elements sunset'>
+<label class='sunset-label'>Sunset Contact Form</label>
+<input class="text-action" placeholder="Your name" type="text"></input>
+<input class="text-action" placeholder="Your Email Address" type="email"></input>
+<input class="text-action" placeholder="Your Phone Number (optional)" type="text"></input>
+<input class="text-action" placeholder="Type your message here" type="text"></input>
+<input class="submit-action" type="submit"></input>
+</div>
+</form> 
 
 export const Lagoon = () => 
-<ContactForm />
+<form>
+<div class="form-elements lagoon">
+<label class='lagoon-label'>Lagoon Contact Form</label>
+<input class="text-action" placeholder="Your name" type="text"></input>
+<input class="text-action" placeholder="Your Email Address" type="email"></input>
+<input class="text-action" placeholder="Your Phone Number (optional)" type="text"></input>
+<input class="text-action" placeholder="Type your message here" type="text"></input>
+<input class="submit-action" type="submit"></input>
+</div>
+</form> 
 
 export const Midnight = () => 
-<ContactForm />
+<form>
+<div class='form-elements midnight'>
+<label class='midnight-label'>Midnight Contact Form</label>
+<input class="text-action" placeholder="Your name" type="text"></input>
+<input class="text-action" placeholder="Your Email Address" type="email"></input>
+<input class="text-action" placeholder="Your Phone Number (optional)" type="text"></input>
+<input class="text-action" placeholder="Type your message here" type="text"></input>
+<input class="submit-action" type="submit"></input>
+</div>
+</form> 
+
 
 export const Moon = () => 
-<ContactForm />
+<form>
+        <div class='form-elements moon'>
+        <label class='moon-label'>Moon Contact Form</label>
+        <input class="text-action" placeholder="Your name" type="text"></input>
+        <input class="text-action" placeholder="Your Email Address" type="email"></input>
+        <input class="text-action" placeholder="Your Phone Number (optional)" type="text"></input>
+        <input class="text-action" placeholder="Type your message here" type="text"></input>
+        <input class="submit-action" type="submit"></input>
+        </div>
+    </form>
