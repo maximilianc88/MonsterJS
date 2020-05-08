@@ -11,7 +11,7 @@ export default {
 export const Sunset = () => 
 <Card
 theme='sunset'
-cardImage="../../public/gagaSunset"
+cardImage="./gagaSunset.png"
 imageHeight='200px'
 title='Sunset!'
 value='Write a caption!'/>;

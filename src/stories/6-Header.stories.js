@@ -10,28 +10,13 @@ export default {
 };
 
 export const Sunset = () => 
-<Header />
+<Header theme="sunset" logo="./codeMonster.png" />
 
 export const Lagoon = () => 
-<Card
-        theme='lagoon'
-        cardImage='./gagaLagoon.png'
-        imageHeight='200px'
-        title='Lagoon!'
-        value='Write a caption!'/>
+<Header theme="lagoon" logo="./codeMonster.png" />
 
 export const Midnight = () => 
-<Card
-        theme='midnight'
-        cardImage='./gagaMidnight.png'
-        imageHeight='200px'
-        title='Midnight!'
-        value='Write a caption!'/>
+<Header theme="midnight" logo="./codeMonster.png" />
 
 export const Moon = () => 
-<Card
-        theme='moon'
-        cardImage='./gagaMoon.png'
-        imageHeight='200px'
-        title='Moon!'
-        value='Write a caption!'/>
+<Header theme="moon" logo="./codeMonster.png" />
