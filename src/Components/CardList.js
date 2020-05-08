@@ -23,7 +23,7 @@ const CardList = (props) => {
         cardImage='./gagaMidnight.png'
         imageHeight='200px'
         title='Midnight!'
-        value='write a caption!'/>
+        value='Write a caption!'/>
            <Card
         theme='moon'
         cardImage='./gagaMoon.png'
