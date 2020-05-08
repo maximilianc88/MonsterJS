@@ -180,10 +180,12 @@ img {
   width: 60%;
 }
 
+.search-bar.midnight button,
 .search-bar button {
   margin-left: 20px;
   background-color: #454545;
 }
+
 /********************* Max's Form Styles******************** */
 textarea {
   float: right;
