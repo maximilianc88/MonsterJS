@@ -3,8 +3,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./style.css";
 
+
 const Button = ({ theme, value, size }) => (
   <button className={`btn ${theme} ${size}`}>{value}</button>
+
 );
 
 Button.propTypes = {
