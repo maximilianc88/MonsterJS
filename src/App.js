@@ -17,12 +17,10 @@ function App() {
     <div>
       <Header />
       <Footer />
-
       <Button />
       <ContactForm />
       <CardList />
       <Social />
-      <Button value="Click!" styleClass="btn-default" />
       <SearchBar value="Search!" />
       <Figure value="Your Text Here!" />
     </div>

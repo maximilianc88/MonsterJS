@@ -9,25 +9,29 @@ const CardList = (props) => {
         <Card
         theme='sunset'
         cardImage='./gagaSunset.png'
-        imageHeight='200px'
+        imageHeight='auto'
+        imageWidth='auto'
         title='Sunset!'
         value='Write a caption!'/>
            <Card
         theme='lagoon'
         cardImage='./gagaLagoon.png'
-        imageHeight='200px'
+        imageHeight='auto'
+        imageWidth='auto'
         title='Lagoon!'
         value='Write a caption!'/>
            <Card
         theme='midnight'
         cardImage='./gagaMidnight.png'
         imageHeight='200px'
+        imageWidth='auto'
         title='Midnight!'
         value='Write a caption!'/>
            <Card
         theme='moon'
         cardImage='./gagaMoon.png'
         imageHeight='200px'
+        imageWidth='auto'
         title='Moon!'
         value='Write a caption!'/>
       
