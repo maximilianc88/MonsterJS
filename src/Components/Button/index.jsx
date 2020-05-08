@@ -2,19 +2,19 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./style.css";
 
-const Button = ({ styleClass, value, onClick }) => (
-  <button className={`btn ${styleClass}`} onClick={onClick}>
+const Button = ({ theme, value, onClick }) => (
+  <button className={`btn ${theme}`} onClick={onClick}>
     {value}
   </button>
 );
 
 Button.propTypes = {
-  styleClass: PropTypes.string,
+  theme: PropTypes.string,
   value: PropTypes.string,
 };
 
 Button.defaultProps = {
-  styleClass: "btn-default",
+  theme: "btn-default",
 };
 
 export default Button;

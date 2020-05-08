@@ -10,16 +10,16 @@ const ButtonList = (props) => {
         <h1> Buttons:  
          <Button
         value='Click!'
-        styleClass='btn btn-sunset monster' /> 
+        theme='btn btn-sunset monster' /> 
          <Button
         value='Click!'
-        styleClass='btn btn-lagoon lg' /> 
+        theme='btn btn-lagoon lg' /> 
          <Button
         value='Click!'
-        styleClass='btn btn-moon md' />
+        theme='btn btn-moon md' />
          <Button
         value='Click!'
-        styleClass='btn btn-midnight sm' />
+        theme='btn btn-midnight sm' />
         </h1>
       </div>
     </div>
@@ -28,11 +28,4 @@ const ButtonList = (props) => {
 
 export default ButtonList;
 
-// types = ['primary', 'outline', 'destructive', 'lowEmphasis'];
-// <>
-// {types.map(type => <Button type={type} key={type} style={{marginRight: 12}}>{type}</Button>)}
 
-// <div style={{backgroundColor: '#212636', display: 'inline-block' }}>
-//   <Button kind='outlineDark' key='outlineDark' style={{margin: 12}}>outlineDark</Button>
-// </div>
-// </>
