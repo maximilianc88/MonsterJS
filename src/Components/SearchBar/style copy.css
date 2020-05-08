@@ -182,9 +182,8 @@ img {
 
 .search-bar button {
   margin-left: 20px;
-  background-color: white;
+  background-color: #454545;
 }
-
 /********************* Max's Form Styles******************** */
 textarea {
   float: right;
