@@ -7,7 +7,7 @@ const Card = ({ theme, cardImage, value, title }) => {
     <wrapper>
       <div>
         <div className="row">
-          <div className="col-md-4">
+          <div className="">
             <div className={`card ${theme}`}>
               <div>
                 <img className="img-fluid" src={cardImage} alt="Gaga" />
