@@ -8,6 +8,8 @@ export default {
 };
 
 export const All = () => (
-  <PropsList />
+  <PropsList 
+  theme= {'midnight'}
+  />
 
 );
