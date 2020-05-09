@@ -1,11 +1,15 @@
-import React from "react";
+import React from 'react';
+import '../style.css';
 
-const Figure = ({ theme, value, image }) => (
-  <div className={`${theme}`}>
-    <img alt="fig-img" src={`${image}`}></img>
+const Figure = ({caption, imageSrc, theme}) => (
+    
+  <div>
+<figure className={`${theme} figure`}>
+    <img className="figureImage" alt="placeholder" src={imageSrc} />
+    <span className="figureLabel" >{caption}</span>
+</figure>
+</div>
 
-    <p>{value}</p>
-  </div>
 );
 
 export default Figure;
