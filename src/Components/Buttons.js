@@ -1,31 +1,19 @@
-import React from 'react';
-import Button from './Button';
-import './style.css'
+import React from "react";
+import PropTypes from "prop-types";
+import "./style.css";
 
+const Button = ({ theme, value, size }) => (
+  <button className={`btn ${theme} ${size}`}>{value}</button>
+);
 
-const ButtonList = (props) => {
-  return (
-    <div>
-      <div className="comp-cat buttons">
-        <h1> Buttons:  
-         <Button
-        value='Click!'
-        theme='btn btn-sunset monster' /> 
-         <Button
-        value='Click!'
-        theme='btn btn-lagoon lg' /> 
-         <Button
-        value='Click!'
-        theme='btn btn-moon md' />
-         <Button
-        value='Click!'
-        theme='btn btn-midnight sm' />
-        </h1>
-      </div>
-    </div>
-  );
+Button.propTypes = {
+  theme: PropTypes.string,
+  value: PropTypes.string,
+  size: PropTypes.string,
 };
 
-export default ButtonList;
+Button.defaultProps = {
+  theme: "btn-default",
+};
 
-
+export default Button;
