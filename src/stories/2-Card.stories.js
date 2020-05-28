@@ -1,7 +1,7 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
 import { Button } from "@storybook/react/demo";
-import Card from "../Components/Card";
+import Card from "../Components/CardList";
 
 export default {
   title: "Card",
@@ -13,7 +13,7 @@ export const Sunset = () => (
     theme="sunset"
     cardImage="./gagaSunset.png"
     imageHeight="200px"
-    title="Sunset theme card"
+    title="Sunset Card Title"
     value="Add a caption here"
   />
 );

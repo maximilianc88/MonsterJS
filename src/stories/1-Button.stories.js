@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../Components/Buttons";
+import "../Components/style.css";
 
 export default {
   title: "Buttons",
@@ -13,13 +14,13 @@ export const Sunset = () => (
       the following classes:
       <br></br> <code>monster, lg, md, sm</code>
     </p>
-    <Button value="Click here" theme="btn btn-sunset monster" />
+    <Button value="Click here" theme="sunset" size="monster" />
 
-    <Button value="Click!" theme="btn btn-sunset lg" />
+    <Button value="Click here" theme="sunset" size="lg" />
 
-    <Button value="Click!" theme="btn btn-sunset md" />
+    <Button value="Click here" theme="sunset" size="md" />
 
-    <Button value="Click!" theme="btn btn-sunset sm" />
+    <Button value="Click here" theme="sunset" size="sm" />
   </span>
 );
 
@@ -30,10 +31,13 @@ export const Lagoon = () => (
       the following classes:
       <br></br> <code>monster, lg, md, sm</code>
     </p>
-    <Button value="Click!" theme="btn btn-lagoon monster" />
-    <Button value="Click!" theme="btn btn-lagoon lg" />
-    <Button value="Click!" theme="btn btn-lagoon md" />
-    <Button value="Click!" theme="btn btn-lagoon sm" />
+    <Button value="Click here" theme="lagoon" size="monster" />
+
+    <Button value="Click here" theme="lagoon" size="lg" />
+
+    <Button value="Click here" theme="lagoon" size="md" />
+
+    <Button value="Click here" theme="lagoon" size="sm" />
   </span>
 );
 
@@ -44,10 +48,13 @@ export const Moon = () => (
       the following classes:
       <br></br> <code>monster, lg, md, sm</code>
     </p>
-    <Button value="Click!" theme="btn btn-moon monster" />
-    <Button value="Click!" theme="btn btn-moon lg" />
-    <Button value="Click!" theme="btn btn-moon md" />
-    <Button value="Click!" theme="btn btn-moon sm" />
+    <Button value="Click here" theme="moon" size="monster" />
+
+    <Button value="Click here" theme="moon" size="lg" />
+
+    <Button value="Click here" theme="moon" size="md" />
+
+    <Button value="Click here" theme="moon" size="sm" />
   </span>
 );
 
@@ -58,9 +65,12 @@ export const Midnight = () => (
       the following classes:
       <br></br> <code>monster, lg, md, sm</code>
     </p>
-    <Button value="Click!" theme="btn btn-midnight monster" />
-    <Button value="Click!" theme="btn btn-midnight lg" />
-    <Button value="Click!" theme="btn btn-midnight md" />
-    <Button value="Click!" theme="btn btn-midnight sm" />
+    <Button value="Click here" theme="midnight" size="monster" />
+
+    <Button value="Click here" theme="midnight" size="lg" />
+
+    <Button value="Click here" theme="midnight" size="md" />
+
+    <Button value="Click here" theme="midnight" size="sm" />
   </span>
 );
