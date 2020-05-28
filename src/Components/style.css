@@ -178,6 +178,12 @@ img {
   display: inline-block;
 }
 
+/**************** Figure Styling *********************/
+
+.figureImage {
+  width: auto;
+}
+
 /**************** Search Bar Styling *********************/
 
 .search-bar input {
