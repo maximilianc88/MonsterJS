@@ -1,42 +1,35 @@
-import React from 'react';
-import Card from './Card';
+import React from "react";
+import Proptypes from "prop-types";
+import "./style.css";
 
-
-const CardList = (props) => {
+const Card = ({ theme, cardImage, value, title }) => {
   return (
     <div>
-        <h1> Cards:  </h1>
-        <Card
-        theme='sunset'
-        cardImage='./gagaSunset.png'
-        imageHeight='auto'
-        imageWidth='auto'
-        title='Sunset!'
-        value='Write a caption!'/>
-           <Card
-        theme='lagoon'
-        cardImage='./gagaLagoon.png'
-        imageHeight='auto'
-        imageWidth='auto'
-        title='Lagoon!'
-        value='Write a caption!'/>
-           <Card
-        theme='midnight'
-        cardImage='./gagaMidnight.png'
-        imageHeight='200px'
-        imageWidth='auto'
-        title='Midnight!'
-        value='Write a caption!'/>
-           <Card
-        theme='moon'
-        cardImage='./gagaMoon.png'
-        imageHeight='200px'
-        imageWidth='auto'
-        title='Moon!'
-        value='Write a caption!'/>
-      
+      <div className="row">
+        <div className="col-md-4">
+          <div className={`card ${theme}`}>
+            <div>
+              <h2 className="card">{title}</h2>
+            </div>
+            <div>
+              <img className="img-fluid" src={cardImage} alt="Gaga" />
+            </div>
+
+            <div>
+              <p className="card-p">{value}</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default CardList;
+Card.propTypes = {
+  theme: Proptypes.string,
+  cardImage: Proptypes.string,
+  value: Proptypes.string,
+  title: Proptypes.string,
+};
+
+export default Card;
