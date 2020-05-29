@@ -1,12 +1,13 @@
 /* ---------------------- MAIN CSS ----------------------*/
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .navbar,
 .footer {
   overflow: hidden;
+  border-color: transparent;
 }
 .logo {
   padding: 20px;
@@ -20,6 +21,24 @@ img {
 
 .btn {
   border: solid black 1px;
+}
+
+.main-area {
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5;
+  width: 600px;
+  padding: 25px;
+  text-indent: 50px;
+}
+
+.main-area a {
+  color: red;
+}
+
+.main-area a:hover {
+  color: darkred;
+  font-size: larger;
 }
 
 /* -------------------- THEME CLASS STYLING ------------------------*/
@@ -120,7 +139,7 @@ img {
   font-family: serif;
   background-color: #f8f8ff;
   border: 1px solid;
-  border-color: dimgray;
+  border-color: lightgray;
   padding: 10px 30px;
   text-align: center;
   text-decoration: none;
@@ -193,7 +212,8 @@ img {
 
 .search-bar button {
   margin-left: 20px;
-  background-color: white;
+  background-color: inherit;
+  border-color: inherit;
 }
 
 /* Figure styles */
